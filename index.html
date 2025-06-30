@@ -1,40 +1,35 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
+  <head>    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-<link rel="stylesheet" href="numeric-keyboard.css">
-<meta name="theme-color" content="#81c784" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+     />
+  <link rel="stylesheet" href="numeric-keyboard.css">
+  <meta name="theme-color" content="#81c784" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+
     <title>Numeric keyboard</title>
-
-
-  <style>
-
-  body{
-    background-color: #81c784;
-  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23388e3c' fill-opacity='0.28' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
-  }
-
+    <style>
+    body{background:#fafafa}
+    .wrapper-section{
+      max-width:420px;
+      margin:0px auto;
+    }
   </style>
-
-
   </head>
-  <body style="display:block">
-
-<div class="wrapper-section" style="max-width:420px;margin:0px auto;">
-
-
+  <body >
+<div class="wrapper-section">
 	<div class="content-keyboard" >
 		<div class="">
 			<span id="textshow"></span>
 		</div>
 	</div>
+
 
 
 <div class="wrapper">
@@ -43,8 +38,8 @@
   	<div class="item elevation" number-value="2"><span class="text-number" >2</span></div>
   	<div class="item elevation" number-value="3"><span class="text-number" >3</span></div>
 
-  	<div class="item elevation box-success" backspace >
-  		<span  class="material-icons md-36">backspace</span>
+  	<div class="item elevation box-success">
+  		<img src="delete.svg" style="width:42px;">
   	</div>
 
   </div>
@@ -58,16 +53,22 @@
   	<div class="item elevation" number-value="7"><span class="text-number" >7</span></div>
   	<div class="item elevation" number-value="8"><span class="text-number" >8</span></div>
   	<div class="item elevation" number-value="9"><span class="text-number" >9</span></div>
-  	<div class="item elevation" ></div>
+  	<div class="item elevation box-success">
+      <img src="wsp.png" style="width:42px;">
+    </div>
   </div>
     <div class="row">
-  	<div class="item elevation" ><span class="text-number"></span></div>
+  	<div class="item elevation box-success">
+      <img src="asterisk.svg" style="width:42px;">
+    </div>
   	<div class="item elevation" number-value="0"><span class="text-number"  >0</span></div>
-  	<div class="item elevation" ></div>
+  	<div class="item elevation box-success">
+      <img src="hash.svg" style="width:42px;">
+    </div>
   	<div class="item elevation box-success"  >
-
-		<span  class="material-icons md-36">done</span>
-
+		<span  class="material-icons md-36">
+      <img src="check.svg" style="width:42px;">  
+    </span>
   	</div>
   </div>
 </div>

@@ -3,8 +3,8 @@ body, html {
 }
 
 .elevation{
-	-webkit-box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
-	box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+-webkit-box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
 }    
 
 body{
@@ -19,23 +19,42 @@ body{
   grid-template-rows:auto 350px;
   grid-gap: 6px;
   grid-auto-rows: minmax(70px, auto);
+
 }
 
 .content-keyboard{		
 	display:flex;
 	flex-direction:column;
 	align-items:flex-end;		
-	justify-content:flex-end;
-	padding-bottom:20px;
-	padding-right:20px;
-	font-size:32px;
+	justify-content:flex-end;	
+	font-size:42px;	
+	letter-spacing:4px;
 	font-family: 'Share Tech Mono', monospace;
+}
+
+.content-text{
+	width:100%;	
+	display:flex;	
+	flex-direction:column;	
+	color: #2e4053;	
+	padding:0px 0px 0px 0px;
+}
+.content-text>span:nth-child(1){
+	text-align: center;	
+	flex-grow: 1;	
+	width:100%;
+}
+.content-text>span:nth-child(2){
+	text-align: right;	
+	width:100%;
+	padding: 5px 150px 0px 0px;
 }
 
 
 
-
 .wrapper {
+
+ 
 
 -webkit-touch-callout: none; /* iOS Safari */
 -webkit-user-select: none; /* Safari */
@@ -44,33 +63,35 @@ body{
 -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                           supported by Chrome, Edge, Opera and Firefox */
-  background-color:#d4d4d4; 
   display: grid;
-  padding:6px;
+  padding:6px 24px 24px 24px;  
   grid-template-columns: repeat(1, 100%);
-  grid-gap: 6px;
-  grid-auto-rows: minmax(70px, auto);
-  
+  grid-gap: 8px;
+  grid-auto-rows: minmax(70px, auto);  
 }
 
 .row {		
-
 	display:grid;
-	grid-template-columns:repeat(4,1fr);
+	grid-template-columns:repeat(3,1fr);
 	grid-gap: 6px;
-
 }
 
 .item{
-	background-color:#fff;
-	border-radius: 6px;
+	/*background-color:#fff;
+	
+	*/
+	font-weight:600;
+	color: #2e4053;
+	border-radius: 12px;
 	text-align:center;
-	line-height: 80px;
-
+	line-height: 80px;	
 	position: relative;
 	overflow: hidden;
 	transition: background 400ms;
-	
+}
+
+.item >img{
+	width:42px;
 }
 
 .box-success{
@@ -81,8 +102,9 @@ body{
 }
 
 .text-number{
-	font-size:36px;
+	font-size:42px;
 	font-family: 'Share Tech Mono', monospace;
 	display: inline-block;
 	vertical-align: middle;
 }
+
